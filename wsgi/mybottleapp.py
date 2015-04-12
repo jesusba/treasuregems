@@ -1,12 +1,21 @@
-from bottle import route, default_app
+from bottle import Bottle,route,request,template,default_app
+import requests
 
-@route('/name/<name>')
-def nameindex(name='Stranger'):
-    return '<strong>Hello, %s!</strong>' % name
- 
 @route('/')
-def index():
-    return '<strong>Hello World!</strong>'
+def principal():
+	return template('index.html')
+
+@route('/info')
+def info():
+	gema=request.forms.get('gem')
+	url_info="http://rubygems.org/api/v1/gems/"
+
+	rinfo=requests.get(url_info+gema+".json")
+	doc = json.loads(rinfo.text)
+
+	nombre=gema
+	version=doc["version"]
+	return template('info.tpl',nombre=nombre,version=version)
 
 # This must be added in order to do correct path lookups for the views
 import os

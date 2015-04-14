@@ -5,6 +5,9 @@
 </head>
 <body>
 	<h1>{{nombre}}</h1>
-	<p>Version: {{version}}<p>
+	<p>Última versión: {{version}}</p>
+	<p>Descargas versión: {{descargas}}</p>
+	<p>Autor: {{autor}}</p>
+	<p>Descripción: {{descripcion}}</p>
 </body>
 </html>

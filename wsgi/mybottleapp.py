@@ -6,7 +6,7 @@ import requests
 def principal():
 	return template('index.html')
 
-@route('/info')
+@route('/info' method='POST')
 def info():
 	gema=request.forms.get('gem')
 	url_info="http://rubygems.org/api/v1/gems/"
@@ -16,7 +16,12 @@ def info():
 
 	nombre=gema
 	version=doc["version"]
-	return template('info.tpl',nombre=nombre,version=version)
+	descargas=doc["version_downloads"]
+	autor=doc["authors"]
+	descripcion=doc["info"]
+
+	return template('info.tpl',nombre=nombre,version=version,descargas=descargas,
+		autor=autor,descripcion=descripcion)
 
 # This must be added in order to do correct path lookups for the views
 import os

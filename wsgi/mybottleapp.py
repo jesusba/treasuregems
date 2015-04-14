@@ -6,7 +6,7 @@ import requests
 def principal():
 	return template('index.html')
 
-@route('/info' method='POST')
+@route('/info', method='POST')
 def info():
 	gema=request.forms.get('gem')
 	url_info="http://rubygems.org/api/v1/gems/"

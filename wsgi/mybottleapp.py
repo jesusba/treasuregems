@@ -4,7 +4,11 @@ import requests
 
 @route('/')
 def principal():
-	return template('index.html')
+	rdescargas="http://rubygems.org/api/v1/downloads.json"
+	docdescargas = json.loads(rdescargas.text)
+	
+	totaldescargas=docdescargas["total"]
+	return template('index.html', totaldescargas=totaldescargas)
 
 @route('/info', method='POST')
 def info():
@@ -12,13 +16,13 @@ def info():
 	url_info="http://rubygems.org/api/v1/gems/"
 
 	rinfo=requests.get(url_info+gema+".json")
-	doc = json.loads(rinfo.text)
+	docinfo = json.loads(rinfo.text)
 
 	nombre=gema
-	version=doc["version"]
-	descargas=doc["version_downloads"]
-	autor=doc["authors"]
-	descripcion=doc["info"]
+	version=docinfo["version"]
+	descargas=docinfo["version_downloads"]
+	autor=docinfo["authors"]
+	descripcion=docinfo["info"]
 
 	return template('info.tpl',nombre=nombre,version=version,descargas=descargas,
 		autor=autor,descripcion=descripcion)

@@ -4,7 +4,7 @@ import requests
 
 @route('/')
 def principal():
-	rdescargas="http://rubygems.org/api/v1/downloads.json"
+	rdescargas=requests.get("http://rubygems.org/api/v1/downloads.json")
 	docdescargas = json.loads(rdescargas.text)
 	
 	totaldescargas=docdescargas["total"]

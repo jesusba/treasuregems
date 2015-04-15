@@ -8,6 +8,6 @@
 	<p>Última versión: {{version}}</p>
 	<p>Descargas versión: {{descargas}}</p>
 	<p>Autor: {{autor}}</p>
-	<p>Descripción: {{descripcion}}</p>
+	<p>Descripción (EN): {{descripcion}}</p>
 </body>
 </html>

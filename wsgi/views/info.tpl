@@ -7,7 +7,6 @@
 	<p>Descripción (EN): {{descripcion}}</p>
 </div>
 </div>
-</div>
 	<div id="sidebar1">
 			<div>
 				<h2> mattis condimentum</h2>

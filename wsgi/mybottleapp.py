@@ -1,4 +1,4 @@
-from bottle import get, post, route,request,template,default_app
+from bottle import get,post,route,request,template,default_app,static_file
 import json
 import requests
 
@@ -9,6 +9,10 @@ def principal():
 	
 	totaldescargas=docdescargas["total"]
 	return template('index.html', totaldescargas=totaldescargas)
+
+@route('/static/<filepath:path>')
+def server_static(filepath):
+    return static_file(filepath, root='static')
 
 @get('/info')
 @post('/info', method='POST')

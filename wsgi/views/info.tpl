@@ -9,8 +9,8 @@
 </div>
 	<div id="sidebar1">
 			<div>
-				<h2> mattis condimentum</h2>
-				<ul class="style2">Depende de: 
+				<h2>Dependencias</h2>
+				<ul class="style2"> 
 				<%
 				for i in dependencias:
 				%>

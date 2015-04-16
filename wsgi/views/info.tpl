@@ -9,5 +9,11 @@
 	<p>Descargas versión: {{descargas}}</p>
 	<p>Autor: {{autor}}</p>
 	<p>Descripción (EN): {{descripcion}}</p>
+	<p>Depende de: 
+	<%
+	for i in dependencias:
+		print i["name"],i["requirements"]
+	%>
+	</p>	
 </body>
 </html>

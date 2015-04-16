@@ -1,4 +1,4 @@
-from bottle import route,request,template,default_app
+from bottle import get, post, route,request,template,default_app
 import json
 import requests
 

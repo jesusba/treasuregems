@@ -14,7 +14,7 @@
 				<%
 				for i in dependencias:
 				%>
-				<li><a href="/info?gem={{i["name"]}}">{{i["name"]}}</a> Versiones: {{i["requirements"]}}</li>
+				<li><br><a href="/info?gem={{i["name"]}}">{{i["name"]}}</a></br>Versiones: {{i["requirements"]}}</li>
 				<%
 				end
 				%>

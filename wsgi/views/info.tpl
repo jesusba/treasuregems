@@ -1,10 +1,18 @@
 % include('header.tpl')
 <div class="post">
-	<h1>{{nombre}}</h1>
-	<p>Última versión: {{version}}</p>
-	<p>Descargas versión: {{descargas}}</p>
-	<p>Autor: {{autor}}</p>
-	<p>Descripción (EN): {{descripcion}}</p>
+	<div>
+		<h1>{{nombre}}</h1>
+		<p>Última versión: {{version}}</p>
+	</div>
+	<div>
+		<p>Descargas versión: {{descargas}}</p>
+	</div>
+	<div>
+		<p>Autor: {{autor}}</p>
+	</div>
+	<div>
+		<p>Descripción (EN): {{descripcion}}</p>
+	</div>
 </div>
 </div>
 	<div id="sidebar1">

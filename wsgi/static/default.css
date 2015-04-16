@@ -299,6 +299,20 @@ hr {
 	box-shadow: 0 1px 1px #fa8e1f inset, 0 1px 0 #fff;
 }
 
+.submit {
+	float: left;
+	width: 60px;
+	height: 32px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	border: 0px solid #000;
+	background: url(magnifier.png) 20px 6px no-repeat;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px; 
+	border-radius: 6px;
+}
+
 /** CONTENT */
 
 #content {

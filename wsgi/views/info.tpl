@@ -12,7 +12,10 @@
 	<p>Depende de: 
 	<%
 	for i in dependencias:
-		print i["name"],i["requirements"]
+	%>
+		<p>{{i["name"]}},{{i["requirements"]}}</p>
+	<%
+	end
 	%>
 	</p>	
 </body>

@@ -23,3 +23,5 @@
 							</ul>
 						</div>
 					</div>
+					<div id="page" class="container">
+						<div id="content">

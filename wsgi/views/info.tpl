@@ -1,4 +1,5 @@
 % include('header.tpl')
+<div class="post">
 	<h1>{{nombre}}</h1>
 	<p>Última versión: {{version}}</p>
 	<p>Descargas versión: {{descargas}}</p>
@@ -13,7 +14,7 @@
 	end
 	%>
 	</ul>
-	</div>
-	</div>	
+</div>
+		
 </body>
 </html>

@@ -9,14 +9,14 @@
 	<p>Descargas versión: {{descargas}}</p>
 	<p>Autor: {{autor}}</p>
 	<p>Descripción (EN): {{descripcion}}</p>
-	<p>Depende de: 
+	<ul>Depende de: 
 	<%
 	for i in dependencias:
 	%>
-		<p>{{i["name"]}},{{i["requirements"]}}</p>
+		<li><a href="/info?gem={{i["name"]}}">{{i["name"]}}</a> Versiones: {{i["requirements"]}}</li>
 	<%
 	end
 	%>
-	</p>	
+	</ul>	
 </body>
 </html>

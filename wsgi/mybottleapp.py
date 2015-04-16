@@ -10,7 +10,8 @@ def principal():
 	totaldescargas=docdescargas["total"]
 	return template('index.html', totaldescargas=totaldescargas)
 
-@route('/info', method='POST')
+@get('/info')
+@post('/info', method='POST')
 def info():
 	gema=request.forms.get('gem')
 	url_info="http://rubygems.org/api/v1/gems/"

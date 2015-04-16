@@ -5,6 +5,9 @@
 	<p>Descargas versión: {{descargas}}</p>
 	<p>Autor: {{autor}}</p>
 	<p>Descripción (EN): {{descripcion}}</p>
+</div>
+</div>
+</div>
 	<div id="sidebar1">
 			<div>
 				<h2> mattis condimentum</h2>
@@ -18,5 +21,6 @@
 				%>
 				</ul>
 			</div>
+	</div>
 </body>
 </html>

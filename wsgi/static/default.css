@@ -307,7 +307,7 @@ hr {
 	padding: 0;
 	cursor: pointer;
 	border: 0px solid #000;
-	background: url(magnifier.jpg) 5px 0.25px no-repeat;
+	background: url(magnifier.jpg) 5px 0.01px no-repeat;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px; 
 	border-radius: 6px;

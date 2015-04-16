@@ -5,16 +5,18 @@
 	<p>Descargas versión: {{descargas}}</p>
 	<p>Autor: {{autor}}</p>
 	<p>Descripción (EN): {{descripcion}}</p>
-	<ul>Depende de: 
-	<%
-	for i in dependencias:
-	%>
-		<li><a href="/info?gem={{i["name"]}}">{{i["name"]}}</a> Versiones: {{i["requirements"]}}</li>
-	<%
-	end
-	%>
-	</ul>
-</div>
-		
+	<div id="sidebar1">
+			<div>
+				<h2> mattis condimentum</h2>
+				<ul class="style2">Depende de: 
+				<%
+				for i in dependencias:
+				%>
+				<li><a href="/info?gem={{i["name"]}}">{{i["name"]}}</a> Versiones: {{i["requirements"]}}</li>
+				<%
+				end
+				%>
+				</ul>
+			</div>
 </body>
 </html>

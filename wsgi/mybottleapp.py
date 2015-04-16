@@ -23,9 +23,10 @@ def info():
 	descargas=docinfo["version_downloads"]
 	autor=docinfo["authors"]
 	descripcion=docinfo["info"]
+	dependencias=docinfo["dependencies"]["runtime"]
 
 	return template('info.tpl',nombre=nombre,version=version,descargas=descargas,
-		autor=autor,descripcion=descripcion)
+		autor=autor,descripcion=descripcion,dependencias=dependencias)
 
 # This must be added in order to do correct path lookups for the views
 import os

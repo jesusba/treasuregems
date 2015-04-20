@@ -16,7 +16,7 @@
         <div class="box-top"></div>
         <div class="box-in">
           <div>
-          	<h2>{{nombre}}</h2>
+          	<h2><strong>{{nombre}}</strong></h2>
           	<h2>Última versión: {{version}}</h2>
           </div>
           <div>

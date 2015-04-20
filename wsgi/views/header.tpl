@@ -3,8 +3,8 @@
 <head>
 	<title>Simple Personal</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
-	<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
+	<link rel="stylesheet" href="static/style.css" type="text/css" media="screen, projection, tv" />
+	<link rel="stylesheet" href="static/style-print.css" type="text/css" media="print" />
 </head>
 <body>
 	<div id="wrapper">

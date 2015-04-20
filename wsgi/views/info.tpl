@@ -16,17 +16,17 @@
         <div class="box-top"></div>
         <div class="box-in">
           <div>
-          	<h2>{{nombre}}</h1>
-          	<p>Última versión: {{version}}</p>
+          	<h3>{{nombre}}</h3>
+          	<h2>Última versión: {{version}}</h2>
           </div>
           <div>
-			<p>Descargas versión: {{descargas}}</p>
+			<h2>Descargas versión: {{descargas}}</h2>
 		</div>
 		<div>
-			<p>Autor: {{autor}}</p>
+			<h2>Autor: {{autor}}</h2>
 		</div>
 		<div>
-			<p>Descripción (EN): {{descripcion}}</p>
+			<h2>Descripción (EN): {{descripcion}}</h2>
 		</div>
          <div id="search-form">
         <form class="form-container" action="/info" method="post">

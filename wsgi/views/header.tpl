@@ -5,7 +5,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="static/style.css" type="text/css" media="screen, projection, tv" />
 	<link rel="stylesheet" href="static/style-print.css" type="text/css" media="print" />
-	<link rel="icon" type="image/jpeg" href="static/rubygems.jpeg" />
 </head>
 <body>
 	<div id="wrapper">

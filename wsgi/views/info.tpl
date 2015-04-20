@@ -28,8 +28,9 @@
 		<div>
 			<h2>Descripción (EN): {{descripcion}}</h2>
 		</div>
+      </div>
       <div align=center><a href="http://all-free-download.com/free-website-templates/">TreasureGems</a>, 2015. All rights reserved.</div>
-      <div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div> 
+      <div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a> 
         </div>
       </div>
     </div>

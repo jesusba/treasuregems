@@ -41,7 +41,7 @@ def histoty():
 	rhistorial=requests.get(url_historial+gemaversion+".json")
 	dochistorial = json.loads(rhistorial.text)
 
-	hnombre=dochistorial["name"]
+	hnombre=gemaversion
 	hversion=dochistorial["number"]
 	hdescargas=dochistorial["version_downloads"]
 	hautor=dochistorial["authors"]

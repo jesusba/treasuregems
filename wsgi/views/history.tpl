@@ -4,12 +4,12 @@
 	<div class="box">
 		<div class="box-top"></div>
 		<div class="box-in">
-			<h2>Versiones <strong>{{hnombre}}</strong></h2>
+			<h2>Versiones <strong>{{nombrehistorial}}</strong></h2>
 			<%
 			for i in dependencias:
 			%>
 			<div>
-				<h2>Número de versión: {{hversion}}</h2>
+				<h2>Número de versión: {{versionhistorial}}</h2>
 			</div>
 			<div>
 				<h2>Descargas versión: {{descargashistorial}}</h2>

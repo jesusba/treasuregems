@@ -34,6 +34,7 @@ def info():
 		autor=autor,descripcion=descripcion,dependencias=dependencias)
 
 @get('/history')
+def histoty():
 	gemaversion=request.params.get('gem')
 	url_historial="http://rubygems.org/api/v1/versions/"
 

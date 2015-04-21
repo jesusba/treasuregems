@@ -39,7 +39,7 @@ def histoty():
 	url_historial="http://rubygems.org/api/v1/versions/"
 
 	rhistorial=requests.get(url_historial+gemaversion+".json")
-	dochistorial = json.loads(rinfo.text)
+	dochistorial = json.loads(rhistorial.text)
 
 	hnombre=dochistorial["name"]
 	hversion=dochistorial["number"]

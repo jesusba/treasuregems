@@ -4,7 +4,7 @@
 	<div class="box">
 		<div class="box-top"></div>
 		<div class="box-in">
-			<h2><strong>{{hnombre}} <a href="/history?gem={{i["name"]}}">Otras Versiones</a></strong></h2>
+			<h2><strong>{{hnombre}} <a href="/history?gem={{i["name"]}}"><u>(otras versiones)</a></u></strong></h2>
 			<%
 			for i in dependencias:
 			%>

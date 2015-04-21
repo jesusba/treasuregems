@@ -23,7 +23,7 @@ def info():
 	rinfo=requests.get(url_info+gema+".json")
 	docinfo = json.loads(rinfo.text)
 
-	nombre=gema
+	nombre=docinfo["name"]
 	version=docinfo["version"]
 	descargas=docinfo["version_downloads"]
 	autor=docinfo["authors"]

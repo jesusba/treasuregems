@@ -1,4 +1,5 @@
 % include('header.tpl')
+<div class="column-left">
 <h3>DEPENDENCIAS</h3>
       <ul class="menu">
       	<%
@@ -16,7 +17,7 @@
         <div class="box-top"></div>
         <div class="box-in">
           <div>
-          	<h2><strong>{{nombre}}</strong></h2>
+          	<h2><strong>{{nombre}} <a href="/history?gem={{i["name"]}}">Otras Versiones</a></strong></h2>
           	<h2>Última versión: {{version}}</h2>
           </div>
           <div>

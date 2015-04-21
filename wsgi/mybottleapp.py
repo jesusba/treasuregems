@@ -17,7 +17,7 @@ def server_static(filepath):
 @get('/info')
 @post('/info', method='POST')
 def info():
-	gema=request.forms.get('gem')
+	gema=request.params.get('gem')
 	url_info="http://rubygems.org/api/v1/gems/"
 
 	rinfo=requests.get(url_info+gema+".json")

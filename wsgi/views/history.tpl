@@ -4,7 +4,7 @@
 	<div class="box">
 		<div class="box-top"></div>
 		<div class="box-in">
-			<h2><strong>{{hnombre}} <a href="/history?gem={{i["name"]}}"><u>(otras versiones)</a></u></strong></h2>
+			<h2>Versiones <strong>{{hnombre}}</strong></h2>
 			<%
 			for i in dependencias:
 			%>
@@ -12,10 +12,10 @@
 				<h2>Número de versión: {{hversion}}</h2>
 			</div>
 			<div>
-				<h2>Descargas versión: {{hdescargas}}</h2>
+				<h2>Descargas versión: {{descargashistorial}}</h2>
 			</div>
 			<div>
-				<h2>Autor: {{hautor}}</h2>
+				<h2>Autor: {{autorhistorial}}</h2>
 			</div>
 			<div>
 				<h2>Fecha versión: {{confechapubli}}</h2>

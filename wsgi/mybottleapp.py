@@ -34,22 +34,22 @@ def info():
 		autor=autor,descripcion=descripcion,dependencias=dependencias)
 
 @get('/history')
-def histoty():
+def history():
 	gemaversion=request.params.get('gem')
 	url_historial="http://rubygems.org/api/v1/versions/"
 
 	rhistorial=requests.get(url_historial+gemaversion+".json")
 	dochistorial = json.loads(rhistorial.text)
 
-	hnombre=gemaversion
-	hversion=dochistorial["number"]
-	hdescargas=dochistorial["version_downloads"]
-	hautor=dochistorial["authors"]
-	hfechapubli=dochistorial["built_at"]
-	confechapubli = hfechapubli[8:10]+"-"+hfechapubli[5:8]+hfechapubli[0:4]+" "+hfechapubli[11:16]
+	nombrehistorial=gemaversion
+	versionhistorial=dochistorial["number"]
+	descargashistorial=dochistorial["version_downloads"]
+	autorhistorial=dochistorial["authors"]
+	fechapublihistorial=dochistorial["built_at"]
+	confechapubli = fechapublihistorial[8:10]+"-"+fechapublihistorial[5:8]+fechapublihistorial[0:4]+" "+fechapublihistorial[11:16]
 
-	return template('history.tpl',hnombre=hnombre,hversion=hversion,hdescargas=hdescargas,
-		hautor=hautor,confechapubli=confechapubli)
+	return template('history.tpl',nombrehistorial=nombrehistorial,versionhistorial=versionhistorial,descargashistorial=descargashistorial,
+		autorhistorial=autorhistorial,confechapubli=confechapubli)
 
 # This must be added in order to do correct path lookups for the views
 import os

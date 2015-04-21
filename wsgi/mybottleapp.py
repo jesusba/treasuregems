@@ -36,7 +36,7 @@ def info():
 @get('/history')
 	url_historial="http://rubygems.org/api/v1/versions/"
 
-	rhistorial=requests.get(url_info+gema+".json")
+	rhistorial=requests.get(url_historial+gema+".json")
 	dochistorial = json.loads(rinfo.text)
 
 	hnombre=dochistorial["name"]

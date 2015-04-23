@@ -5,8 +5,7 @@
 		<div class="box-top"></div>
 		<div class="box-in">
 			<h2>Todas las Versiones <strong></strong></h2>
-		</div>
-		<table class="table1">
+			<table class="table1">
 			<thead>
 				<th scope="col">Versión</th>
   				<th scope="col">Autor</th>
@@ -33,6 +32,7 @@
 			%>
 			</tbody>
 		</table>
+		</div>
 		<div align=center><a href="http://all-free-download.com/free-website-templates/">TreasureGems</a>, 2015. All rights reserved.</div>
 		<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div>
 	</div>

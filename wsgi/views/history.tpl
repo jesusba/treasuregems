@@ -4,7 +4,7 @@
 	<div class="box">
 		<div class="box-top"></div>
 		<div class="box-in">
-			<h2>Versiones <strong></strong></h2>
+			<h2>Todas las Versiones <strong></strong></h2>
 		</div>
 		<table class="table1">
 			<thead>
@@ -23,7 +23,7 @@
 				confechapubli = fechapubli[8:10]+"-"+fechapubli[5:8]+fechapubli[0:4]+" "+fechapubli[11:16]
 			%>
 			<tr>
-				<td>{{version}}</td>
+				<td><a href="http://rubygems.org/gems/rails/versions/{{version}}">{{version}}</td>
 				<td>{{autor}}</td>
 				<td>{{descargas}}</td>
 				<td>{{confechapubli}}</td>

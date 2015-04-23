@@ -12,7 +12,7 @@
 		<div class="title">
 			<div class="title-bottom-right">
 				<h1><a href="/"><span>TreasureGems </span><img heigth="12" width="30" src="static/rubygems.jpeg"></a></h1>
-				<p>La web de informacíon sobre las gemas de Ruby</p>
+				<p>La web de información sobre las gemas de Ruby</p>
 			</div>
 		</div>
 		<hr class="noscreen" />

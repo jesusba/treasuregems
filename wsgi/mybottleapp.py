@@ -42,15 +42,7 @@ def history():
 	rhistorial=requests.get(url_historial+gemaversion+".json")
 	dochistorial = json.loads(rhistorial.text)
 
-	nombrehistorial=gemaversion
-	versionhistorial=dochistorial["number"]
-	descargashistorial=dochistorial["version_downloads"]
-	autorhistorial=dochistorial["authors"]
-	fechapublihistorial=dochistorial["built_at"]
-	confechapubli = fechapublihistorial[8:10]+"-"+fechapublihistorial[5:8]+fechapublihistorial[0:4]+" "+fechapublihistorial[11:16]
-
-	return template('history.tpl',nombrehistorial=nombrehistorial,versionhistorial=versionhistorial,descargashistorial=descargashistorial,
-		autorhistorial=autorhistorial,confechapubli=confechapubli)
+	return template('history.tpl',doc=doc)
 
 # This must be added in order to do correct path lookups for the views
 import os

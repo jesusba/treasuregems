@@ -4,7 +4,7 @@
 	<div class="box">
 		<div class="box-top"></div>
 		<div class="box-in">
-			<h2>Versiones <strong>{{nombrehistorial}}</strong></h2>
+			<h2>Versiones <strong></strong></h2>
 			<table>
 				<tr>
 					<td><strong>Versión</strong></td>

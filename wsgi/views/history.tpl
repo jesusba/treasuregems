@@ -5,7 +5,7 @@
 		<div class="box-top"></div>
 		<div class="box-in">
 			<h2>Versiones <strong></strong></h2>
-			<table>
+			<table border="1">
 				<tr>
 					<td><strong>Versión</strong></td>
   					<td colspan="2"><strong>Autor</strong></td>
@@ -14,12 +14,18 @@
 				</tr>
 				<%
 				for i in dochistorial:
+					version=i["number"]
+					autor=i["authors"]
+					descargas=i["downloads_count"]
+					fechapubli=i["built_at"]
+					confechapubli = fechapubli[8:10]+"-"+fechapubli[5:8]+fechapubli[0:4]+" "+fechapubli[11:16]
 				%>
 				<tr>
-					<td>i["number"]</td>
-					<td colspan="2">i["author"]</td>
-					<td colspan="2">i["downloads_count"]</td>
-					<td>i["built_at"][8:10]+"-"+i["built_at"][5:8]+i["built_at"][0:4]+" "+i["built_at"][11:16]</td>
+					<td></td>
+					<td colspan="2">{{version}}</td>
+					<td colspan="2">{{autor}}</td>
+					<td colspan="2">{{descargas}}</td>
+					<td>{{confechapubli}}</td>
 				</tr>
 				<%
 				end

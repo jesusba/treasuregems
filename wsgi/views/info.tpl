@@ -17,7 +17,7 @@
         <div class="box-top"></div>
         <div class="box-in">
           <div>
-          	<h2><strong>{{nombre}} </strong><a href="/history?gem={{["name"]}}"><u>(otras versiones)</u></a></h2>
+          	<h2><strong>{{nombre}} </strong><a href="/history?gem={{["nombre"]}}"><u>(otras versiones)</u></a></h2>
           	<h2>Última versión: {{version}}</h2>
           </div>
           <div>

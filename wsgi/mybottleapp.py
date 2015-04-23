@@ -42,7 +42,7 @@ def history():
 	rhistorial=requests.get(url_historial+gemaversion+".json")
 	dochistorial = json.loads(rhistorial.text)
 
-	return template('history.tpl',doc=doc)
+	return template('history.tpl',dochistorial=dochistorial)
 
 # This must be added in order to do correct path lookups for the views
 import os

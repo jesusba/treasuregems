@@ -13,7 +13,7 @@
   					<td><strong>Fecha publicación</strong></td>
 				</tr>
 				<%
-				for i in doc:
+				for i in dochistorial:
 				%>
 				<tr>
 					<td>i["number"]</td>

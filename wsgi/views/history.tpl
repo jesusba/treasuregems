@@ -7,8 +7,8 @@
 			<h2>Versiones <strong></strong></h2>
 			<table border="1">
 				<tr>
-					<td><strong>Versión</strong></td>
-  					<td colspan="2"><strong>Autor</strong></td>
+					<td align="center"><strong>Versión</strong></td>
+  					<td align="center" colspan="2"><strong>Autor</strong></td>
   					<td colspan="2"><strong>Descargas de la versión</strong></td>
   					<td colspan="2"><strong>Fecha publicación</strong></td>
 				</tr>

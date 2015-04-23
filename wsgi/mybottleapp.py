@@ -46,7 +46,7 @@ def history():
 
 @error(404)
 def error404(error):
-	return template('error')
+	return template('notfound.tpl')
 
 @error(500)
 def error500(error):

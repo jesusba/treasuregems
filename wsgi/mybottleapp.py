@@ -44,6 +44,10 @@ def history():
 
 	return template('history.tpl',dochistorial=dochistorial)
 
+@error(404)
+def error404(error):
+	return template('error')
+
 @error(500)
 def error500(error):
 	return template('error')

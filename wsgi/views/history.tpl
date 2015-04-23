@@ -21,9 +21,9 @@
 					confechapubli = fechapubli[8:10]+"-"+fechapubli[5:8]+fechapubli[0:4]+" "+fechapubli[11:16]
 				%>
 				<tr>
-					<td colspan="2">{{version}}</td>
-					<td colspan="2">{{autor}}</td>
-					<td colspan="2">{{descargas}}</td>
+					<td>{{version}}</td>
+					<td>{{autor}}</td>
+					<td>{{descargas}}</td>
 					<td>{{confechapubli}}</td>
 				</tr>
 				<%

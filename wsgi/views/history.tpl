@@ -23,7 +23,7 @@
 				<tr>
 					<td>{{version}}</td>
 					<td colspan="2">{{autor}}</td>
-					<td colspan="2">{{descargas}}</td>
+					<td align="center" colspan="2">{{descargas}}</td>
 					<td colspan="2">{{confechapubli}}</td>
 				</tr>
 				<%

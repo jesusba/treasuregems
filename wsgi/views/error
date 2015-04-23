@@ -1,5 +1,5 @@
 % include('header.tpl')
-	<img src="static/404.png" width="500" height="500">
+	<img src="static/404.png" width="1000" height="325">
 	<h1>La gema introducida no existe. Por favor, vuelva atrás <a href="/">aquí</a></h1>
 		</div>
 		<div align=center><a href="http://all-free-download.com/free-website-templates/">TreasureGems</a>, 2015. All rights reserved.</div>

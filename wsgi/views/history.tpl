@@ -10,7 +10,7 @@
 					<td><strong>Versión</strong></td>
   					<td colspan="2"><strong>Autor</strong></td>
   					<td colspan="2"><strong>Descargas de la versión</strong></td>
-  					<td><strong>Fecha publicación</strong></td>
+  					<td colspan="2"><strong>Fecha publicación</strong></td>
 				</tr>
 				<%
 				for i in dochistorial:
@@ -22,9 +22,9 @@
 				%>
 				<tr>
 					<td>{{version}}</td>
-					<td>{{autor}}</td>
-					<td>{{descargas}}</td>
-					<td>{{confechapubli}}</td>
+					<td colspan="2">{{autor}}</td>
+					<td colspan="2">{{descargas}}</td>
+					<td colspan="2">{{confechapubli}}</td>
 				</tr>
 				<%
 				end

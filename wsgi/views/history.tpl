@@ -9,7 +9,7 @@
 				<tr>
 					<td><strong>Versión</strong></td>
   					<td colspan="2"><strong>Autor</strong></td>
-  					<td colspan="2"><strong>Fecha publicación</strong></td>
+  					<td colspan="2"><strong>Descargas de la versión</strong></td>
   					<td><strong>Fecha publicación</strong></td>
 				</tr>
 				<%
@@ -21,7 +21,6 @@
 					confechapubli = fechapubli[8:10]+"-"+fechapubli[5:8]+fechapubli[0:4]+" "+fechapubli[11:16]
 				%>
 				<tr>
-					<td></td>
 					<td colspan="2">{{version}}</td>
 					<td colspan="2">{{autor}}</td>
 					<td colspan="2">{{descargas}}</td>

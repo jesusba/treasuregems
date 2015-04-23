@@ -42,7 +42,7 @@ def history():
 	rhistorial=requests.get(url_historial+gemaversion+".json")
 	dochistorial = json.loads(rhistorial.text)
 
-	return template('history.tpl',dochistorial=dochistorial)
+	return template('history.tpl',dochistorial=dochistorial, gemaversion=gemaversion)
 
 @error(404)
 def error404(error):

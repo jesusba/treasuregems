@@ -44,6 +44,10 @@ def history():
 
 	return template('history.tpl',dochistorial=dochistorial)
 
+@error(500)
+def error500(error):
+	return template('error')
+
 # This must be added in order to do correct path lookups for the views
 import os
 from bottle import TEMPLATE_PATH

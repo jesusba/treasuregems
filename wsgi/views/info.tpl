@@ -31,12 +31,12 @@
       if lang == 'es':
       %>
         <h2>Descripción: {{traduccion}}</h2>
-        <p><a href="/info?gem={{nombre}}">Volver al original</a></p>
+        <p><a href="/info?gem={{nombre}}">[Volver al original]</a></p>
       <%
       else:
       %>
         <h2>Descripción (EN): {{descripcion}}</h2>
-        <p><a href="/info?gem={{nombre}}&lang=es">Traducir</a></p>
+        <p><a href="/info?gem={{nombre}}&lang=es">[Traducir]</a></p>
       <%
       end
       %>

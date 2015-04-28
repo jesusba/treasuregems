@@ -31,8 +31,12 @@
       if lang == 'es':
       %>
         <h2>Descripción: {{traduccion}}</h2>
-      <% else:
+      <%
+      else:
+      %>
         <h2>Descripción (EN): {{descripcion}}</h2>
+      <%
+      end
       %>
   	</div>
     <div>

@@ -19,6 +19,7 @@ def server_static(filepath):
 @post('/info', method='POST')
 def info():
 	gema=request.params.get('gem')
+	tospain=request.params.get('traducir')
 	url_info="http://rubygems.org/api/v1/gems/"
 
 	rinfo=requests.get(url_info+gema+".json")
@@ -30,13 +31,14 @@ def info():
 	autor=docinfo["authors"]
 	descripcion=docinfo["info"]
 	dependencias=docinfo["dependencies"]["runtime"]
-
+	
 	rtranslate = requests.get("http://api.mymemory.translated.net/get?q="+descripcion+"&langpair=en|es")
 	doctranslate = json.loads(rtranslate.text)
 	traduccion = doctranslate["responseData"]["translatedText"]
+	lang="es"
 	
 	return template('info.tpl',nombre=nombre,version=version,descargas=descargas,
-		autor=autor,traduccion=traduccion,dependencias=dependencias)
+		autor=autor,traduccion=traduccion,dependencias=dependencias,lang=lang,descripcion=descripcion)
 
 @get('/history')
 def history():

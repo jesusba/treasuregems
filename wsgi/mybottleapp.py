@@ -31,8 +31,12 @@ def info():
 	descripcion=docinfo["info"]
 	dependencias=docinfo["dependencies"]["runtime"]
 
+	rtranslate = requests.get("http://api.mymemory.translated.net/get?q="+descripcion+"&langpair=en|es")
+	doctranslate = json.loads(rtranslate.text)
+	traduccion = doctransalte["responseData"]["translatedText"]
+	
 	return template('info.tpl',nombre=nombre,version=version,descargas=descargas,
-		autor=autor,descripcion=descripcion,dependencias=dependencias)
+		autor=autor,traduccion=traduccion,dependencias=dependencias)
 
 @get('/history')
 def history():

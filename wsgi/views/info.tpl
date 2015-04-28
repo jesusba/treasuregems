@@ -27,7 +27,7 @@
 			<h2>Autor: {{autor}}</h2>
 		</div>
 		<div>
-			<h2>Descripción (EN): {{descripcion}}</h2>
+			<h2>Descripción: {{traduccion}}</h2>
 		</div>
       </div>
       <div align=center><a href="http://all-free-download.com/free-website-templates/">TreasureGems</a>, 2015. All rights reserved.</div>

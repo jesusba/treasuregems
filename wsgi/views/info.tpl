@@ -40,7 +40,7 @@
       %>
   	</div>
     <div>
-       <p><a href="/history?gem={{nombre}}&lang=es">Traducir</a></p>
+       <p><a href="/info?gem={{nombre}}&lang=es">Traducir</a></p>
     </div>
       </div>
       <div align=center><a href="http://all-free-download.com/free-website-templates/">TreasureGems</a>, 2015. All rights reserved.</div>

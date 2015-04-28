@@ -33,7 +33,7 @@ def info():
 
 	rtranslate = requests.get("http://api.mymemory.translated.net/get?q="+descripcion+"&langpair=en|es")
 	doctranslate = json.loads(rtranslate.text)
-	traduccion = doctransalte["responseData"]["translatedText"]
+	traduccion = doctranslate["responseData"]["translatedText"]
 	
 	return template('info.tpl',nombre=nombre,version=version,descargas=descargas,
 		autor=autor,traduccion=traduccion,dependencias=dependencias)

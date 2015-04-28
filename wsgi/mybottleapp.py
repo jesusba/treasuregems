@@ -19,7 +19,7 @@ def server_static(filepath):
 @post('/info', method='POST')
 def info():
 	gema=request.params.get('gem')
-	tospain=request.params.get('traducir')
+	tospain=request.params.get('lang')
 	url_info="http://rubygems.org/api/v1/gems/"
 
 	rinfo=requests.get(url_info+gema+".json")
